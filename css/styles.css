@@ -8,6 +8,12 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+.list {
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -20,4 +26,151 @@ p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.container {
+    padding-right: 16px;
+    padding-left: 16px;
+
+    outline: 2px solid black;
+}
+/* .section-gallery-reviews {
+    padding-bottom: 228px;
+
+    background-color: #ffffff;
+    background-image: url('../images/img/products/Backgroud/backgroud_desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+.gallery {
+    margin-bottom: 140px;
+}
+
+.list-gallery {
+    text-align: center;
+}
+.item-gallery {
+    border-radius: 24px;
+}
+
+
+
+.list-reviews {
+    text-align: center;
+}
+.customer-photo {
+    margin-bottom: 30px;
+
+    border-radius: 50%;
+}
+/* .container-reviews-text {
+    max-width: 968px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    padding: 43px 109px;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    
+    color: #FCFCFC;
+
+    background-color: #84A178;
+    border-radius: 24px;
+} */
+
+/* SLIDER */
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-dots {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li {
+    list-style: none;
+}
+.slick-dots li:not(:last-child) {
+    margin-right: 18px;
+}
+
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+
+    padding: 0;
+
+    font-size: 0;
+
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: 0;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #84A178;
+}
+
+/* -------ADAPTIVE-------- */
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container-reviews-text {
+        max-width: 280px;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    
+        padding: 35px 39px;
+    
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2.58;
+
+        color: #FCFCFC;
+        background-color: #84A178;
+        border-radius: 24px;
+    }
+    .customer-name {
+        margin-bottom: 12px;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.86;
+        
+        color: #131313;
+    }
+    .section-gallery-reviews {
+        padding-bottom: 132px;
+    
+        background-color: #ffffff;
+        background-image: url('../images/img/products/Backgroud/backgroud_mobile.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
