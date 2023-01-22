@@ -14,6 +14,11 @@ p {
 
     list-style: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -30,95 +35,26 @@ p {
 .container {
     padding-right: 16px;
     padding-left: 16px;
+}
 
-    outline: 2px solid black;
-}
-/* .section-gallery-reviews {
-    padding-bottom: 228px;
+/* GALLERY */
 
-    background-color: #ffffff;
-    background-image: url('../images/img/products/Backgroud/backgroud_desktop.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
-
-.slideshow {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-.item-gallery {
-    position: absolute;
-    max-width: 90vw;
-    max-height: 80vh;
-    opacity: 0;
-    animation: slideshow 15s ease-in-out infinite;
-}
-@keyframes slideshow {
-    from {
-        opacity: 0;
-        filter: grayscale(100%);
-    }
-
-    10% {
-        opacity: 1;
-        filter: grayscale(80%);
-    }
-
-    15% {
-        opacity: 0;
-        }
-    }
-.slideshow .i_1 {
-    animation-delay: 5s;
-    transform: translateX(-30px) rotate(-1deg);
-}
-    
-.slideshow .i_2 {
-    animation-delay: 10s;
-    transform: translateX(-10px) rotate(1deg);
-}
-    
-.slideshow .i_3 {
-    animation-delay: 15s;
-    transform: translateY(-30px) rotate(1deg);
-}
 .item-gallery {
     border-radius: 24px;
 }
 
-
+/* REVIEWS */
 
 .list-reviews {
     text-align: center;
 }
 .customer-photo {
+    display: inline-block;
+
     margin-bottom: 30px;
 
     border-radius: 50%;
 }
-/* .container-reviews-text {
-    max-width: 968px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
-
-    padding: 43px 109px;
-
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.04em;
-    
-    color: #FCFCFC;
-
-    background-color: #84A178;
-    border-radius: 24px;
-} */
 
 /* SLIDER */
 
@@ -172,6 +108,10 @@ p {
     }
 }
 @media screen and (max-width: 767px) {
+    .gallery {
+        margin-bottom: 80px;
+    }
+    
     .container-reviews-text {
         max-width: 280px;
     
@@ -200,12 +140,85 @@ p {
         color: #131313;
     }
     .section-gallery-reviews {
-        padding-bottom: 132px;
+        padding-bottom: 410px;
     
         background-color: #ffffff;
         background-image: url('../images/img/products/Backgroud/backgroud_mobile.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .gallery {
+        margin-bottom: 100px;
+    }
+        .container-reviews-text {
+            max-width: 705px;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+    
+            padding: 28px 80px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.87;
+
+            letter-spacing: 0.04em;
+
+            color: #FCFCFC;
+            background-color: #84A178;
+            border-radius: 24px;
+        }
+        .customer-name {
+            margin-bottom: 32px;
+        
+            font-weight: 500;
+                font-size: 16px;
+                line-height: 1.87;
+        
+            color: #131313;
+        }
+    .section-gallery-reviews {
+        padding-bottom: 370px;
+        
+        background-color: #ffffff;
+        background-image: url('../images/img/products/Backgroud/backgroud_tablet.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+    .gallery {
+        margin-bottom: 140px;
+    }
+    .item-gallery {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-reviews-text {
+        max-width: 968px;
+
+        padding: 43px 109px;
+
+        font-size: 16px;
+    }
+
+        .section-gallery-reviews {
+        padding-bottom: 228px;
+    
+        background-image: url('../images/img/products/Backgroud/backgroud_desktop.png');
     }
 }
